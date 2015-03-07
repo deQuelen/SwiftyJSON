@@ -113,7 +113,7 @@ To use this library in your project manually you may:
 let json = JSON(data: dataFromNetworking)
 ```
 ```swift
-let json = JSON(jsonObject)
+let json = SwiftyJSON.JSON(jsonObject)
 ```
 
 ####Subscript
@@ -358,3 +358,17 @@ Alamofire.request(.GET, url, parameters: parameters)
     }
   }
 ```
+
+##Work with Cocoapods
+
+Import SwiftyJSON
+
+`import SwiftyJSON`
+
+And change in your code :
+
+`var json = JSON(json!)`
+
+with :
+
+`var json = SwiftyJSON.JSON(json!)`
